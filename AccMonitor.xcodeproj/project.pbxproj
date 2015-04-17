@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		377CF4411A6CE1F300ECD656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 377CF4401A6CE1F300ECD656 /* main.m */; };
+		377CF4441A6CE1F300ECD656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 377CF4431A6CE1F300ECD656 /* AppDelegate.m */; };
+		377CF4471A6CE1F300ECD656 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 377CF4461A6CE1F300ECD656 /* ViewController.m */; };
+		377CF44A1A6CE1F300ECD656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377CF4481A6CE1F300ECD656 /* Main.storyboard */; };
+		377CF44C1A6CE1F300ECD656 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377CF44B1A6CE1F300ECD656 /* Images.xcassets */; };
+		377CF44F1A6CE1F300ECD656 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377CF44D1A6CE1F300ECD656 /* LaunchScreen.xib */; };
+		377CF45B1A6CE1F300ECD656 /* AccMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 377CF45A1A6CE1F300ECD656 /* AccMonitorTests.m */; };
+		377CF4661A6CE33000ECD656 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 377CF4651A6CE33000ECD656 /* BLEUtility.m */; };
+		377CF4681A6CE37100ECD656 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377CF4671A6CE37100ECD656 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		377CF4551A6CE1F300ECD656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 377CF4331A6CE1F200ECD656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 377CF43A1A6CE1F300ECD656;
+			remoteInfo = AccMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		377CF43B1A6CE1F300ECD656 /* AccMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		377CF43F1A6CE1F300ECD656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		377CF4401A6CE1F300ECD656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		377CF4421A6CE1F300ECD656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		377CF4431A6CE1F300ECD656 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		377CF4451A6CE1F300ECD656 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		377CF4461A6CE1F300ECD656 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		377CF4491A6CE1F300ECD656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		377CF44B1A6CE1F300ECD656 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		377CF44E1A6CE1F300ECD656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		377CF4541A6CE1F300ECD656 /* AccMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		377CF4591A6CE1F300ECD656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		377CF45A1A6CE1F300ECD656 /* AccMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccMonitorTests.m; sourceTree = "<group>"; };
+		377CF4641A6CE33000ECD656 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		377CF4651A6CE33000ECD656 /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		377CF4671A6CE37100ECD656 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		377CF4381A6CE1F300ECD656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377CF4681A6CE37100ECD656 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377CF4511A6CE1F300ECD656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		377CF4321A6CE1F200ECD656 = {
+			isa = PBXGroup;
+			children = (
+				377CF4671A6CE37100ECD656 /* CoreBluetooth.framework */,
+				377CF43D1A6CE1F300ECD656 /* AccMonitor */,
+				377CF4571A6CE1F300ECD656 /* AccMonitorTests */,
+				377CF43C1A6CE1F300ECD656 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		377CF43C1A6CE1F300ECD656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				377CF43B1A6CE1F300ECD656 /* AccMonitor.app */,
+				377CF4541A6CE1F300ECD656 /* AccMonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		377CF43D1A6CE1F300ECD656 /* AccMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				377CF4641A6CE33000ECD656 /* BLEUtility.h */,
+				377CF4651A6CE33000ECD656 /* BLEUtility.m */,
+				377CF4421A6CE1F300ECD656 /* AppDelegate.h */,
+				377CF4431A6CE1F300ECD656 /* AppDelegate.m */,
+				377CF4451A6CE1F300ECD656 /* ViewController.h */,
+				377CF4461A6CE1F300ECD656 /* ViewController.m */,
+				377CF4481A6CE1F300ECD656 /* Main.storyboard */,
+				377CF44B1A6CE1F300ECD656 /* Images.xcassets */,
+				377CF44D1A6CE1F300ECD656 /* LaunchScreen.xib */,
+				377CF43E1A6CE1F300ECD656 /* Supporting Files */,
+			);
+			path = AccMonitor;
+			sourceTree = "<group>";
+		};
+		377CF43E1A6CE1F300ECD656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				377CF43F1A6CE1F300ECD656 /* Info.plist */,
+				377CF4401A6CE1F300ECD656 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		377CF4571A6CE1F300ECD656 /* AccMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				377CF45A1A6CE1F300ECD656 /* AccMonitorTests.m */,
+				377CF4581A6CE1F300ECD656 /* Supporting Files */,
+			);
+			path = AccMonitorTests;
+			sourceTree = "<group>";
+		};
+		377CF4581A6CE1F300ECD656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				377CF4591A6CE1F300ECD656 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		377CF43A1A6CE1F300ECD656 /* AccMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377CF45E1A6CE1F300ECD656 /* Build configuration list for PBXNativeTarget "AccMonitor" */;
+			buildPhases = (
+				377CF4371A6CE1F300ECD656 /* Sources */,
+				377CF4381A6CE1F300ECD656 /* Frameworks */,
+				377CF4391A6CE1F300ECD656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccMonitor;
+			productName = AccMonitor;
+			productReference = 377CF43B1A6CE1F300ECD656 /* AccMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		377CF4531A6CE1F300ECD656 /* AccMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377CF4611A6CE1F300ECD656 /* Build configuration list for PBXNativeTarget "AccMonitorTests" */;
+			buildPhases = (
+				377CF4501A6CE1F300ECD656 /* Sources */,
+				377CF4511A6CE1F300ECD656 /* Frameworks */,
+				377CF4521A6CE1F300ECD656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				377CF4561A6CE1F300ECD656 /* PBXTargetDependency */,
+			);
+			name = AccMonitorTests;
+			productName = AccMonitorTests;
+			productReference = 377CF4541A6CE1F300ECD656 /* AccMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		377CF4331A6CE1F200ECD656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ting Wang";
+				TargetAttributes = {
+					377CF43A1A6CE1F300ECD656 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2VBXB3TR4T;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					377CF4531A6CE1F300ECD656 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 377CF43A1A6CE1F300ECD656;
+					};
+				};
+			};
+			buildConfigurationList = 377CF4361A6CE1F200ECD656 /* Build configuration list for PBXProject "AccMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 377CF4321A6CE1F200ECD656;
+			productRefGroup = 377CF43C1A6CE1F300ECD656 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				377CF43A1A6CE1F300ECD656 /* AccMonitor */,
+				377CF4531A6CE1F300ECD656 /* AccMonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		377CF4391A6CE1F300ECD656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377CF44A1A6CE1F300ECD656 /* Main.storyboard in Resources */,
+				377CF44F1A6CE1F300ECD656 /* LaunchScreen.xib in Resources */,
+				377CF44C1A6CE1F300ECD656 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377CF4521A6CE1F300ECD656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		377CF4371A6CE1F300ECD656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377CF4471A6CE1F300ECD656 /* ViewController.m in Sources */,
+				377CF4441A6CE1F300ECD656 /* AppDelegate.m in Sources */,
+				377CF4661A6CE33000ECD656 /* BLEUtility.m in Sources */,
+				377CF4411A6CE1F300ECD656 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377CF4501A6CE1F300ECD656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377CF45B1A6CE1F300ECD656 /* AccMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		377CF4561A6CE1F300ECD656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 377CF43A1A6CE1F300ECD656 /* AccMonitor */;
+			targetProxy = 377CF4551A6CE1F300ECD656 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		377CF4481A6CE1F300ECD656 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				377CF4491A6CE1F300ECD656 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		377CF44D1A6CE1F300ECD656 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				377CF44E1A6CE1F300ECD656 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		377CF45C1A6CE1F300ECD656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		377CF45D1A6CE1F300ECD656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		377CF45F1A6CE1F300ECD656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AccMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		377CF4601A6CE1F300ECD656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AccMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		377CF4621A6CE1F300ECD656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AccMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AccMonitor.app/AccMonitor";
+			};
+			name = Debug;
+		};
+		377CF4631A6CE1F300ECD656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AccMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AccMonitor.app/AccMonitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		377CF4361A6CE1F200ECD656 /* Build configuration list for PBXProject "AccMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377CF45C1A6CE1F300ECD656 /* Debug */,
+				377CF45D1A6CE1F300ECD656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377CF45E1A6CE1F300ECD656 /* Build configuration list for PBXNativeTarget "AccMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377CF45F1A6CE1F300ECD656 /* Debug */,
+				377CF4601A6CE1F300ECD656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377CF4611A6CE1F300ECD656 /* Build configuration list for PBXNativeTarget "AccMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377CF4621A6CE1F300ECD656 /* Debug */,
+				377CF4631A6CE1F300ECD656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 377CF4331A6CE1F200ECD656 /* Project object */;
+}
